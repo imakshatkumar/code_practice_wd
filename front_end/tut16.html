@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* ID SELECTOR */
+        #div_red {
+            color: red;
+        }
+        /* Id & class selector */
+        #second.first {
+            color: yellowgreen;
+        }
+        /* grouping selector */
+        footer,
+        #span_id.third {
+            background-color: rgb(222, 20, 240);
+            color: black;
+        }
+        p.first {
+            color: magenta;
+            background-color: cyan;
+        }
+        /* child selector: lagu tb jab sirf child hona chahiye no other relation */
+        div>p {
+            color: yellow;
+            background-color: blue;
+        }
+        /* //DESCENDENT SELECTOR: lagu tb jab child ya grandchild ya koi descendent ho// */
+        div span {
+            color: rgb(230, 134, 10);
+            background-color: red;
+        }
+        /* UNIVERSAL SELECTOR: applies to all the elements in the sheet */
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        /* Psuedo Selector: changes style of links */
+        a:visited{
+            color:red;
+        }
+        a:link{color:pink;}
+        a:hover{background-color: red;}
+        p:first-child{
+            background-color: aqua;/*if p is the first child apply these properties */
+        }
+    </style>
+</head>
+<body>
+    <p class="first">This is the first paragraph to demostrate CSS selectors. </p>
+    <p class="first" id="second">This is another paragraph differeent from the first one</p>
+    <div><p id="div_red">This is the last paragraph inserted between a div tag. </p></div>
+    <!-- Grouping selectors -->
+    <span id="span_id" class="third">This is span span is this is hwo it is written with hte real ones liking fang
+        getsagj tnehsouew </span>
+    <br><br>
+    <div>
+        <p id="last_para">The lasttof the real ones are not ehdead pull emunder the best of hte times</p>
+    </div>
+    <main class = "one">
+        <p>this is one</p>
+        <p>this is two</p>
+    </main>
+    <div>
+        <p> <span>This is a div inside a span tag..."*" is a symbol for universal selector. </span>
+        </p>
+    </div>
+    <a href="https://www.google.com">
+        <h4>Search anything on the web</h4>
+    </a>&nbsp;&nbsp;
+    <a href="https://www.linkedin.com">
+        <h4>GET A JOB</h4>
+    </a>
+    <footer>THis is a FOOTERE</footer>
+</body>
+</html>

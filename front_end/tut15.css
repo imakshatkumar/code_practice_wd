@@ -1,0 +1,12 @@
+h1{
+    color: brown;
+    background-color: aqua;
+}
+span{
+    color:aqua;
+    background-color: red;
+}
+h3, p{
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create CArd Exercise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        div.outer{
+            border: 5px solid rgb(242, 237, 237);
+            border-radius: 33px;
+            background-image: "card.jpeg";
+            width: 300px;
+            height: 400px;
+            
+        }
+        img {
+            border-radius: 10%;
+        }
+        div div{
+            display: inline-flex;
+            border-radius: 11px;
+            /* background-color: aqua; */
+            font-size: 12px;
+            margin: 10px;
+            padding: 6px;
+            font-family: cursive;
+            font-weight: 550;
+        }
+        
+        div:nth-child(2){
+            background-color: solid white;
+            border: 1px solid grey; 
+            color: rgba(128, 128, 128, 0.578);
+        }
+        p.lorem{
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            overflow:auto;
+            
+            font-size: 13px;
+            text-align:justify;
+        }
+        div.lake{
+            background-color: solid white;
+            border: 1px solid rgba(128, 128, 128, 0.597);
+            color: rgba(128, 128, 128, 0.652);
+        }
+        div :nth-child(5){
+            background-color: rgba(14, 244, 244, 0.244);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: inline-flex;
+            padding: 6px;
+            color: rgba(0, 119, 255, 0.716);
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight:bold;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <p class="inner first">
+            <img src="card.jpeg" alt="ERROR" width="300px" >
+        </p>
+        <div class="nature">&nbsp;Nature</div>
+        <div class="lake">Lakes</div>
+        <p class="lorem">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore nemo est alias voluptate nesciunt praesentium eum! Quaerat commodi molestiae, obcaecati eveniet ratione molestias accusantium deserunt inventore quisquam 
+        </p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<p class="button">Read More</p>
+    </div>
+</body>
+</html>

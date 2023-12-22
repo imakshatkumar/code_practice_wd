@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid red;
+            background-color: peru;
+            transform: rotate(0.125turn);
+            /* transform-origin: 0% 200%;used to change the axis of rotation */
+            /* transform: rotateX(90deg); disappears for the screen completely(paperthin) */
+            /* transform: rotateZ(30deg);axis of rot is per to screen */
+            /* transform: scale(0.69); */
+            /* skew can be applied for Z-axis */
+            /* transform: skewX(11deg) skewY(13deg); */
+            /* transform: translate(-40%) skewX(10deg) scale(0.6); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+        }
+        .container {
+            width: 60vw;
+            height: 60vh;
+            border: 2px solid purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            I am a box
+        </div>
+    </div>
+</body>
+</html>

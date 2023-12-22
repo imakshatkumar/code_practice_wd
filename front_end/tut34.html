@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        /* not a good way to style website using this, these days. avoid it !! */
+        .cards{
+            border: 2px solid black;
+            display: flow-root; /*used to fit the elements within this container. used in the past to create content in newspaper format...*/
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            /* clear: right; */
+        }
+        .card:nth-child(2){
+            clear: right;
+        }
+        img{
+            float: left;/*canbe changed to right*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/928826678/photo/two-men-relaxing-and-fishing.jpg?s=2048x2048&w=is&k=20&c=fSG5LG9kxLNzjG9_YI1bXdz3-gD7UW2e2bd9arD5Vm8=" alt="error" width="230">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsam, perspiciatis deleniti corporis sit nesciunt unde fugiat! Aliquid nostrum accusantium quos cumque incidunt laborum, exercitationem ea natus accusamus dolor deserunt fugiat eveniet perspiciatis a.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe fugiat vero tenetur, optio error veritatis. Itaque recusandae odit eaque pariatur, quisquam blanditiis consequatur facere suscipit doloremque minus commodi velit ratione saepe impedit, ut vel nisi. Libero provident eveniet quo impedit iusto beatae nesciunt hic ipsum et! Ab sunt ad dolore reprehenderit corporis odio, tenetur, officiis, consectetur amet minus fugiat mollitia illo similique error magni dolores iure? Nostrum at similique ullam vero odio exercitationem fugiat, dolore hic amet libero nobis harum alias quidem voluptatibus ab quia quibusdam earum nemo inventore enim, quaerat magni. Vel voluptates eum a nam aspernatur dolores dignissimos cumque ullam porro. Doloremque, in quam eaque commodi est voluptas hic ullam rerum quisquam porro aliquam? Tempora, sunt sequi illum dignissimos quae accusamus delectus dicta, fuga vel tempore aspernatur, libero quod. Dolorem, quae? Distinctio mollitia cumque error animi vero sequi, deserunt asperiores itaque, commodi sint alias quaerat quae maiores dolorem accusantium. Quos rerum cupiditate voluptates cum at maiores ipsum blanditiis non accusantium dolorum temporibus officiis placeat tenetur, aliquid, assumenda veritatis eos necessitatibus ex molestias. Odit minus, modi voluptate earum voluptatem saepe dolor dolorum nemo vero possimus quod ipsum non dolore doloremque eum! Porro officia vitae dolor, beatae magni quod consectetur saepe perferendis cupiditate laudantium id pariatur quos non, delectus fugiat placeat, ipsa magnam corrupti dignissimos maxime. Architecto impedit doloremque repudiandae ducimus ut quisquam explicabo quas nihil quaerat iure nulla, eligendi perspiciatis atque cumque pariatur dolor sint quasi iste, at soluta similique sunt odio obcaecati error. Culpa id soluta perferendis amet quia, obcaecati natus suscipit, necessitatibus, quos sint molestiae aut ipsa saepe nostrum sit eos laborum fugit ea officiis. Vitae sit quaerat natus magnam culpa earum voluptatibus harum, eum, numquam repudiandae tempore, magni perspiciatis ullam quasi. Voluptas dolorum suscipit, quia iusto ratione ex, consequatur quam aliquid perferendis distinctio eaque inventore numquam nulla dolore obcaecati vero cupiditate voluptatem voluptatum aliquam exercitationem magnam voluptate quibusdam! Repudiandae quisquam a dolores at, amet omnis iusto, non molestiae tempora architecto dolorum voluptates facilis debitis ducimus tenetur veritatis ex.</div>
+        <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, iure reiciendis est, corporis nobis magni dolor voluptates consectetur error ipsa optio exercitationem ex impedit, voluptatum debitis. Nulla maiores impedit delectus incidunt quo quasi assumenda voluptates ullam error, eligendi optio repudiandae facilis rem iusto quas magnam officia ad nemo deserunt numquam. Pariatur aliquid, et harum doloremque odit quisquam numquam architecto voluptate eius quasi! Nam quia nemo aperiam amet porro cum dolores doloribus hic in quae dolorum, consequatur sed at reprehenderit recusandae ipsum praesentium quod vero, molestiae architecto fugit error ut, fugiat aspernatur! Fugit ex exercitationem ipsum rem ipsam labore dicta saepe illum odio, odit magnam officiis excepturi corrupti cum ab! Explicabo quia quis in recusandae voluptatibus earum ea molestiae temporibus praesentium unde!</div>
+</body>
+</html>

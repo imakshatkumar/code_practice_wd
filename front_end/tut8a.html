@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is how you use HTML forms</h2>
+    <form action="backend.php">
+        <!-- This form will collect data from code and submit it to a backend server called "backend.php" -->
+        <div>
+            Name: <input type="text" name = "my_names">
+        </div>  
+        <br> <!--Not recommended to do so, we'll do such things using CSS instead-->      
+        <div>
+            RegN: <input type="number" name = "my_number">
+        </div>
+        <br>
+        <div>
+            EmailID: <input type="email" name = "my_email_ID">
+        </div>
+        <br>
+        <div>
+            Date Joined: <input type="date" name = "date_joined">
+        </div>
+        <br>
+        <br>
+        <div>
+            You're NOT a robot: <input type="checkbox" name = "human_or_not">
+            <!-- if want the check box to be already checked, use checked -->
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name = "sex"> Female<input type="radio" name = "sex"> Others<input type = "radio" name = "sex">
+        </div>
+        <div>
+        Write a short description about yourself<textarea name="my_text" ></textarea>
+        </div>
+        <div>
+            SUBMIT <input type = "submit" name = "submit">
+            RESET <input type = "reset" name = "reset">
+        </div>
+        <div>
+            <label for = "car">Car</label>
+            <select name = "my_car" id = "car">
+                <option value = "ind">Indica</option>
+                <option value = "swf">Swift</option>
+                <option value = "wgr">WagonR</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

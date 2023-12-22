@@ -1,0 +1,56 @@
+.container {
+    border: 2px solid red;
+    display: flex;
+    /*now use can use the poperties of flexbox */
+    height: 80vh;
+    justify-content: center;
+    /* horizontally center align; align the main axis */
+    align-items: center;
+    /* vertically centers align; aligns the cross axis */
+    /* theese above properties are not applied on individual items... */
+    /* align-content: center; */
+    /* used when more than 1 lines are present */
+    flex-direction: row;
+    /* justify content: first sees the main axis. and align according to that axis.
+    if justtify content: row-> main axis is X and if it's column, main axis is Y
+    main axis--> X ; Cross axis--> Y; Row */
+    flex-wrap: wrap;
+    /*wrap reverse also exit*/
+    /* there is not justify-items in flexbox.  */
+    flex-flow: row wrap;
+    /* used to set flow direction & flex wrap*/
+    /* flex-flow: <flex-dirction> <flex-wrap>; */
+    gap: 30px 30px;
+    /* controls the gap between elemets. row-gap & column-gap can also be defined */
+}
+
+/* remeber which prp are for container and which are not, tho most off me are for containers */
+.item {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 4px;
+    background-color: blueviolet;
+    text-align: center;
+    /* flex-grow: 2; */
+}
+/* Higher the order the later the element will come... */
+/* Default order is 0. if same order exists, then it'll be arrageed in their inherited format. */
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+.item1{
+    flex-grow: 1;
+    flex-shrink: 2; /*as the layout is shrinked, the element size shriks by 2...*/
+    align-self: end;
+}
+.item2 {
+    flex-grow: 4;
+    align-self: flex-start;
+}

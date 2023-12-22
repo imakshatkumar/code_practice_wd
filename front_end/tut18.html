@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX elements</title>
+    <style>
+        /* everything in css are box */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 50px;
+            background-color: orange;
+            margin: 5px;
+            border: 2px solid rgb(24, 23, 22);
+            height: 200px;
+            box-sizing: border-box;
+            /* Now it means that the height given above is the sum of teh total height - margin. 
+            Similar concept would be applied for width. In short it changes the defination of height/width given above.  */
+        }
+        /* If two elements margins overlap then larger one->used & small one is COLLAPSED */
+        .box2 {
+            color: red;
+            background-color: blue;
+            padding: 50px;
+            background-color: orange;
+            margin: 5px;
+            border: 2px solid rgb(24, 23, 22);
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* Total Width = Width +  Padding(L+R) + Margin(L+R) + Border(L+R). */
+        /* Total Height = Height + Padding(Top+Bottom) + Margin(Top+Bottom) + Border(Top+Bottom) */
+        /* Border box: remaining length left after removing margin. */
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I AM A BOX</div>
+    <div class="box box2">THIS IS ANOTHER BOX</div>
+
+
+</body>
+
+</html>

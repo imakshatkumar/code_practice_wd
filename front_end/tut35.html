@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color: yellow;
+        } */
+        .boxes *{
+            color: blue; 
+            border: 2px solid black;
+        }
+        [data-color = "primary"]{
+            margin-top: 45px;;
+        }
+        p, a, .box, [data-color = "sec"]{   /*grouping of selectors and attribute selc */
+            padding-top: 78px;
+        } 
+        div.box:nth-child(odd){
+            background-color: aqua;
+        }
+        .box:nth-last-child(2){     /* exp with diff nth prop */
+            background-color: red;
+        }
+        /* we can insert elements dynamically in the website... */
+        .boxes::before{
+            content: "I am dynamically inserted via CSS before boxes";
+            color: purple;
+        }
+        .boxes::after{
+            content: "I am dynamically inserted via CSS after boxes";
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 34px;
+        }
+        input::placeholder{ 
+            /* psuedo-selectors */
+            color: pink;
+            background-color: red;;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color = "primary" class="box">I am the first box.</div>
+        <div data-color="sec" class ="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Type you name here">
+    </div>
+</body>
+</html>

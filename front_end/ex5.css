@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+nav {
+    background-color: purple;
+    color: white;
+    width: auto;
+    list-style-type: none;
+    justify-content: space-around;
+    
+}
+nav li {
+    display: inline;
+    margin: 32px;
+}
+main{
+    background-color: black;
+    padding: 34px;
+    color: white
+}
+.container div{
+    display: inline-block;
+    text-align: center;
+    width: 40vw;
+    height: 70vh;
+    text-align: center;
+}
+.box1{
+    background-color: red;
+    margin: 0 12px auto;
+
+}
+.box2{
+    background-color: green;
+    margin: 0 12px auto;
+}
+footer{
+    background-color: orange;
+    width: auto;
+    height: 200px;
+}
+.sigma {
+    border: 2px solid pink;
+    border-radius: 23px;
+    font-size: 34px;
+    text-align: center;
+    width: 500px;
+    margin: 155px auto;
+    padding: 34px;
+}
+.button {
+    border: 3px solid red;
+    border-radius: 43px;
+    width: 23px;
+    text-align: center;
+    background-color: blue;
+    position: fixed;
+    bottom: 12px;
+    right: 23px;
+    padding: 23px;
+}

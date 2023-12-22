@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids: 1</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [first] 180px [second] 59px;
+            /* the first column is 120px, second one is 100px wide
+            Grid Line: line; Grid cell: cell in grid
+            Grid track: area between 2 adjacent grid lines
+            Grid area: are of quadrilateral formed by 2 pairs of parellel grid lines...*/ 
+            grid-template-rows: [one] 60px [two] 60px [t] 60px;
+        }
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        .item-4 {
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        .item-2{
+            grid-row: one/two;
+            grid-column: first/second;
+            /* same as gridd-row-start/end */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

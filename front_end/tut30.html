@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* Varibles are used where same property like color/ font etc are repeated frequenctly. Can be used to store numbers, strings, urls etc */
+        :root{
+            --color: blue;  /*global variable are created*/
+            --sec_color: yellowgreen; 
+            --def_pad: 24px;
+            --def_op: 0.9;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--def_op);
+            list-style-type: none;
+            padding: var(--def_pad);
+            --color: yellow;
+            border: 6px solid ;
+            border-color: var(--color);
+        }
+        ul > li:first-child{
+            --color1: red;   /*var is overwritten & local var is formed*/
+            background-color: var(--color1, orange);
+        }
+        ul > li:nth-child(2){
+            background-color: var(--sec_color, green);
+            color: var(--color);
+        }
+        ul li:nth-child(3){
+            color: var(--no_color, pink);
+            background-color: var(--nocolor,aquamarine);
+        }
+        div:nth-child(2){
+            color: var(--color);
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class= "nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error deleniti molestiae magni omnis, dignissimos ullam placeat suscipit libero voluptatem excepturi tenetur ipsa distinctio corrupti incidunt aliquam sit ratione delectus! Rerum nemo eius laudantium! Quos, atque praesentium. Quas, fugiat rem earum autem ex corrupti saepe?
+    </div>
+</body>
+</html>
